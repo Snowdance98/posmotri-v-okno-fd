@@ -16,6 +16,9 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1,
@@ -52,11 +55,13 @@ ol {
 
 .button {
   background-color: inherit;
+  font-weight: 700;
   color: #fff;
   font-size: 18px;
   border: 1px solid #fff;
   padding: 6px 0;
   cursor: pointer;
+  appearance: none;
 }
 
 .button:hover {
@@ -87,15 +92,9 @@ ol {
   white-space: nowrap;
 }
 
-.page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .content {
   width: 1140px;
-  min-height: 534px;
+  height: 534px;
   display: flex;
   flex-direction: row;
   align-items: end;
@@ -104,13 +103,16 @@ ol {
 
 .result__video-container {
   width: 711px;
+  height: 386px;
   margin-bottom: 16px;
   position: relative;
+  overflow: hidden;
 }
 
 .result__video {
-  min-width: 711px;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .search-form {
@@ -189,7 +191,7 @@ ol {
   opacity: 1;
 }
 
-.search-form__checkbox-list > .search-form__label > .search-form__label-text:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
   text-decoration-style: solid;
 }
@@ -216,9 +218,9 @@ ol {
 .title {
   font-size: 75px;
   font-weight: 700;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
-  line-height: 94%;
+  line-height: 93%;
 }
 
 .content__accent {
@@ -227,12 +229,9 @@ ol {
 
 .content__list-container {
   height: 298px;
-  margin-top: 26px;
+  margin-top: 23px;
   overflow: auto;
   position: relative;
-}
-
-.content__list-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -293,9 +292,11 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-size: 30px;
   font-weight: 700;
+  padding-left: 2px;
+  margin-top: -5px;
   text-transform: uppercase;
   overflow: hidden;
   white-space: nowrap;
@@ -305,6 +306,7 @@ ol {
 .content__video-card-description {
   font-size: 18px;
   line-height: 16.2px;
+  padding-left: 2px;
   -webkit-line-clamp: 3;
   display: -webkit-box;
   -webkit-box-orient: vertical;
