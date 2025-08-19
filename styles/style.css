@@ -54,6 +54,7 @@ ol {
 }
 
 .button {
+  font-family: inherit;
   background-color: inherit;
   font-weight: 700;
   color: #fff;
@@ -94,7 +95,6 @@ ol {
 
 .content {
   width: 1140px;
-  height: 534px;
   display: flex;
   flex-direction: row;
   align-items: end;
@@ -295,7 +295,6 @@ ol {
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
   font-weight: 700;
-  padding-left: 2px;
   margin-top: -5px;
   text-transform: uppercase;
   overflow: hidden;
@@ -306,7 +305,6 @@ ol {
 .content__video-card-description {
   font-size: 18px;
   line-height: 16.2px;
-  padding-left: 2px;
   -webkit-line-clamp: 3;
   display: -webkit-box;
   -webkit-box-orient: vertical;
